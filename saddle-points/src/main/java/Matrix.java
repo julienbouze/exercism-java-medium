@@ -1,13 +1,22 @@
+import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
 class Matrix {
+    List<List<Integer>> values;
 
     Matrix(List<List<Integer>> values) {
-        throw new UnsupportedOperationException("Delete this statement and write your own implementation.");
+        this.values = values;
     }
 
     Set<MatrixCoordinate> getSaddlePoints() {
-        throw new UnsupportedOperationException("Delete this statement and write your own implementation.");
+        Set<MatrixCoordinate> saddlePoints = new HashSet<>();
+    
+        
+    
+        return saddlePoints;
     }
+    
+    
+    
 }

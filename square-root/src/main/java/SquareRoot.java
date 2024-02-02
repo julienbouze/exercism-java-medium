@@ -1,5 +1,10 @@
 public class SquareRoot {
     public int squareRoot(int radicand) {
-        throw new UnsupportedOperationException("Please implement the SquareRoot.squareRoot method.");
+        int value = 1;
+        while (value*value != radicand){
+            value +=1;
+        }
+        return value;
+        
     }
 }

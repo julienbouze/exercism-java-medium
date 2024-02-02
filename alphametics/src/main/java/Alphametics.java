@@ -1,13 +1,15 @@
+import java.util.HashMap;
 import java.util.Map;
 
 class Alphametics {
+    String userInput;
 
     Alphametics(String userInput) {
-        throw new UnsupportedOperationException("Delete this statement and write your own implementation.");
+        this.userInput = userInput;
     }
 
     Map<Character, Integer> solve() throws UnsolvablePuzzleException {
-        throw new UnsupportedOperationException("Delete this statement and write your own implementation.");
+        
     }
 
 }

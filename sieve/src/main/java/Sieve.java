@@ -1,11 +1,31 @@
+import java.util.ArrayList;
 import java.util.List;
 
 class Sieve {
+    int maxPrime;
     Sieve(int maxPrime) {
-        throw new UnsupportedOperationException("Delete this statement and provide your own implementation.");
+        this.maxPrime = maxPrime;
     }
 
     List<Integer> getPrimes() {
-        throw new UnsupportedOperationException("Delete this statement and provide your own implementation.");
+        List<Integer> primes = new ArrayList<>();
+        boolean[] isComposite = new boolean[maxPrime + 1];
+
+        for (int i = 2; i <= Math.sqrt(maxPrime); ++i) {
+            if (!isComposite[i]) {
+                primes.add(i);
+                for (int j = i * i; j <= maxPrime; j += i) {
+                    isComposite[j] = true;
+                }
+            }
+        }
+
+        for (int i = (int) Math.sqrt(maxPrime) + 1; i <= maxPrime; ++i) {
+            if (!isComposite[i]) {
+                primes.add(i);
+            }
+        }
+
+        return primes;
     }
 }

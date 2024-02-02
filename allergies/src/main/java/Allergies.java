@@ -1,15 +1,18 @@
+import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 class Allergies {
+    int score;
     Allergies(int score) {
-        throw new UnsupportedOperationException("Please implement the Allergies constructor");
+        this.score = score;
     }
 
     boolean isAllergicTo(Allergen allergen) {
-        throw new UnsupportedOperationException("Please implement the isAllergicTo method");
+        return (score & allergen.getScore()) != 0;
     }
 
     List<Allergen> getList() {
-        throw new UnsupportedOperationException("Please implement the getList method");
+        return Arrays.stream(Allergen.values()).filter(this::isAllergicTo).collect(Collectors.toList());
     }
 }

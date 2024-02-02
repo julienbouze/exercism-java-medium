@@ -1,7 +1,6 @@
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
 
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import java.util.Optional;
@@ -16,7 +15,6 @@ public class ErrorHandlingTest {
                 .isThrownBy(() -> errorHandling.handleErrorByThrowingIllegalArgumentException());
     }
 
-    @Disabled("Remove to run test")
     @Test
     public void testThrowIllegalArgumentExceptionWithDetailMessage() {
         assertThatExceptionOfType(IllegalArgumentException.class)
@@ -25,7 +23,6 @@ public class ErrorHandlingTest {
                 .withMessage("This is the detail message.");
     }
 
-    @Disabled("Remove to run test")
     @Test
     public void testThrowAnyCheckedException() {
         assertThatExceptionOfType(Exception.class)
@@ -33,7 +30,6 @@ public class ErrorHandlingTest {
                 .isNotInstanceOf(RuntimeException.class);
     }
 
-    @Disabled("Remove to run test")
     @Test
     public void testThrowAnyCheckedExceptionWithDetailMessage() {
         assertThatExceptionOfType(Exception.class)
@@ -43,14 +39,12 @@ public class ErrorHandlingTest {
                 .withMessage("This is the detail message.");
     }
 
-    @Disabled("Remove to run test")
     @Test
     public void testThrowAnyUncheckedException() {
         assertThatExceptionOfType(RuntimeException.class)
                 .isThrownBy(() -> errorHandling.handleErrorByThrowingAnyUncheckedException());
     }
 
-    @Disabled("Remove to run test")
     @Test
     public void testThrowAnyUncheckedExceptionWithDetailMessage() {
         assertThatExceptionOfType(RuntimeException.class)
@@ -59,14 +53,12 @@ public class ErrorHandlingTest {
                 .withMessage("This is the detail message.");
     }
 
-    @Disabled("Remove to run test")
     @Test
     public void testThrowCustomCheckedException() {
         assertThatExceptionOfType(CustomCheckedException.class)
                 .isThrownBy(() -> errorHandling.handleErrorByThrowingCustomCheckedException());
     }
 
-    @Disabled("Remove to run test")
     @Test
     public void testThrowCustomCheckedExceptionWithDetailMessage() {
         assertThatExceptionOfType(CustomCheckedException.class)
@@ -75,14 +67,12 @@ public class ErrorHandlingTest {
                 .withMessage("This is the detail message.");
     }
 
-    @Disabled("Remove to run test")
     @Test
     public void testThrowCustomUncheckedException() {
         assertThatExceptionOfType(CustomUncheckedException.class)
                 .isThrownBy(() -> errorHandling.handleErrorByThrowingCustomUncheckedException());
     }
 
-    @Disabled("Remove to run test")
     @Test
     public void testThrowCustomUncheckedExceptionWithDetailMessage() {
         assertThatExceptionOfType(CustomUncheckedException.class)
@@ -91,7 +81,6 @@ public class ErrorHandlingTest {
                 .withMessage("This is the detail message.");
     }
 
-    @Disabled("Remove to run test")
     @Test
     public void testReturnOptionalInstance() {
         Optional<Integer> successfulResult = errorHandling.handleErrorByReturningOptionalInstance("1");
