@@ -1,0 +1,29 @@
+ bottle-song/bin/main/BottleSong.class              | Bin [31m546[m -> [32m1654[m bytes
+ bottle-song/bin/test/BottleSongTest.class          | Bin [31m5189[m -> [32m5071[m bytes
+ bottle-song/src/main/java/BottleSong.java          |  32 [32m+++++++++++++++++++[m[31m--[m
+ bottle-song/src/test/java/BottleSongTest.java      |   7 [31m-----[m
+ grade-school/bin/main/School.class                 | Bin [31m849[m -> [32m2949[m bytes
+ grade-school/bin/test/SchoolTest.class             | Bin [31m5043[m -> [32m4817[m bytes
+ grade-school/src/main/java/School.java             |  21 [32m++++++++++++[m[31m--[m
+ grade-school/src/test/java/SchoolTest.java         |  19 [31m------------[m
+ knapsack/bin/main/Knapsack.class                   | Bin [31m682[m -> [32m1037[m bytes
+ knapsack/bin/test/KnapsackTest.class               | Bin [31m3212[m -> [32m3094[m bytes
+ knapsack/src/main/java/Knapsack.java               |  17 [32m++++++++++[m[31m-[m
+ knapsack/src/test/java/KnapsackTest.java           |   7 [31m-----[m
+ phone-number/bin/main/PhoneNumber.class            | Bin [31m559[m -> [32m577[m bytes
+ phone-number/bin/test/PhoneNumberTest.class        | Bin [31m6754[m -> [32m6537[m bytes
+ phone-number/src/main/java/PhoneNumber.java        |   4 [32m++[m[31m-[m
+ phone-number/src/test/java/PhoneNumberTest.java    |  18 [31m------------[m
+ .../bin/main/PrimeFactorsCalculator.class          | Bin [31m629[m -> [32m892[m bytes
+ .../bin/test/PrimeFactorsCalculatorTest.class      | Bin [31m2983[m -> [32m2820[m bytes
+ .../src/main/java/PrimeFactorsCalculator.java      |  15 [32m++++++++[m[31m--[m
+ .../src/test/java/PrimeFactorsCalculatorTest.java  |  12 [31m--------[m
+ robot-name/bin/main/Robot.class                    | Bin [31m554[m -> [32m2966[m bytes
+ robot-name/bin/test/RobotTest.class                | Bin [31m2431[m -> [32m2331[m bytes
+ robot-name/src/main/java/Robot.java                |  31 [32m++++++++++++++++++[m[31m--[m
+ robot-name/src/test/java/RobotTest.java            |   5 [31m----[m
+ series/bin/main/Series.class                       | Bin [31m658[m -> [32m1204[m bytes
+ series/bin/test/SeriesTest.class                   | Bin [31m5233[m -> [32m5079[m bytes
+ series/src/main/java/Series.java                   |  22 [32m++++++++++++[m[31m--[m
+ series/src/test/java/SeriesTest.java               |  11 [31m-------[m
+ 28 files changed, 126 insertions(+), 95 deletions(-)

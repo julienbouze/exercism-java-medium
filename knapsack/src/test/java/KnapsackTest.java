@@ -1,4 +1,3 @@
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -22,7 +21,6 @@ public class KnapsackTest {
         assertThat(knapsack.maximumValue(100, items)).isEqualTo(0);
     }
 
-    @Disabled("Remove to run test")
     @Test
     public void testOneItemTooHeavy() {
         List<Item> items = List.of(
@@ -32,7 +30,6 @@ public class KnapsackTest {
         assertThat(knapsack.maximumValue(10, items)).isEqualTo(0);
     }
 
-    @Disabled("Remove to run test")
     @Test
     public void testFiveItemsCannotBeGreedyByWeight() {
         List<Item> items = List.of(
@@ -46,7 +43,6 @@ public class KnapsackTest {
         assertThat(knapsack.maximumValue(10, items)).isEqualTo(21);
     }
 
-    @Disabled("Remove to run test")
     @Test
     public void testFiveItemsCannotBeGreedyByValue() {
         List<Item> items = List.of(
@@ -60,7 +56,6 @@ public class KnapsackTest {
         assertThat(knapsack.maximumValue(10, items)).isEqualTo(80);
     }
 
-    @Disabled("Remove to run test")
     @Test
     public void testExampleKnapsack() {
         List<Item> items = List.of(
@@ -73,7 +68,6 @@ public class KnapsackTest {
         assertThat(knapsack.maximumValue(10, items)).isEqualTo(90);
     }
 
-    @Disabled("Remove to run test")
     @Test
     public void testEightItems() {
         List<Item> items = List.of(
@@ -90,7 +84,6 @@ public class KnapsackTest {
         assertThat(knapsack.maximumValue(104, items)).isEqualTo(900);
     }
 
-    @Disabled("Remove to run test")
     @Test
     public void testFifteenItems() {
         List<Item> items = List.of(

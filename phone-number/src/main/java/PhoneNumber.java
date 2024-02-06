@@ -1,11 +1,13 @@
 class PhoneNumber {
+    String numberString;
 
     PhoneNumber(String numberString) {
-        throw new UnsupportedOperationException("Delete this statement and write your own implementation.");
+        this.numberString = numberString;
     }
 
     String getNumber() {
         throw new UnsupportedOperationException("Delete this statement and write your own implementation.");
     }
+
 
 }

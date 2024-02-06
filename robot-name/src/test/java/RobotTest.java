@@ -4,7 +4,6 @@ import java.util.HashSet;
 import java.util.Set;
 
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 public class RobotTest {
@@ -23,18 +22,15 @@ public class RobotTest {
     }
 
     @Test
-    @Disabled("Remove to run test")
     public void sameRobotsHaveSameNames() {
         assertThat(robot.getName()).isEqualTo(robot.getName());
     }
 
-    @Disabled("Remove to run test")
     @Test
     public void differentRobotsHaveDifferentNames() {
         assertThat(robot.getName()).isNotEqualTo(new Robot().getName());
     }
 
-    @Disabled("Remove to run test")
     @Test
     public void resetName() {
         final String name = robot.getName();
@@ -44,7 +40,6 @@ public class RobotTest {
         assertIsValidName(name2);
     }
     
-    @Disabled("Remove to run test")
     @Test
     public void robotNamesAreUnique() {
         Set<String> robotNames = new HashSet<>();
